@@ -11,8 +11,8 @@ import downArrIcon from '@/../public/header/down-ar.svg'
 
 const Header = () => {
     return (
-        <header className="bg-white shadow-sm mt-[33px] mx-[40px]">
-            <div className="container mx-auto px-[40px] pb-[20px] flex items-center justify-between">
+        <header className="bg-white shadow-sm mt-[33px]">
+            <div className="mx-auto px-[40px] pb-[20px] flex items-center justify-between">
                 <div className="flex items-center justify-between">
                     <span className="font-bold text-[16px] mr-6 leading-[21px]">MONDAY</span>
                     <div className="flex items-center gap-[8px]">
@@ -73,11 +73,11 @@ const Header = () => {
 
                     <div className='flex items-center justify-end gap-[5px]'>
                         <div className='relative'>
-                            <Image className='absolute top-0 left-[-24px] rounded-[20px]' src={ emptyWalletIcon } alt='searchIcon'
-                                   width={ 20 }
-                                   height={ 20 }/>
+                            <Image className='absolute top-0 left-[-28px] rounded-[20px]' src={ emptyWalletIcon } alt='searchIcon'
+                                   width={ 26 }
+                                   height={ 26 }/>
                             <a href="#">
-                                <Image src={ profilePhoto } alt='profile' width={ 32 } height={ 32 }
+                                <Image src={ profilePhoto } alt='profile' width={ 45 } height={ 45 }
                                        className="rounded-full"/>
                             </a>
                             <span

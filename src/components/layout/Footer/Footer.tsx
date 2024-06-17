@@ -6,7 +6,7 @@ import s from './Footer.module.scss'
 
 const Footer = () => {
     return (
-        <footer className="bg-[#202020] text-white pt-[125px] pb-[70px] px-[100px]">
+        <footer className="bg-[#202020] text-white pt-[125px] pb-[70px] px-[60px]">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between">
                     <div>

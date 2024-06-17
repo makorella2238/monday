@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Home() {
     return (
-        <div>
+        <div className='mx-[40px]'>
             <Header/>
             <Profile/>
             <Services/>
