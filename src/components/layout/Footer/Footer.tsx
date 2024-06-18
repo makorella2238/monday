@@ -58,7 +58,7 @@ const Footer = () => {
                         className="cursor-auto py-[9.5px] px-[40.5px] border border-white/40 text-white rounded-[12px] transition-all ease-in-out duration-500 text-white/40">Sign In
                     </button>
                     <button
-                        className="flex items-center gap-[10px] py-[9px] px-[37.5px] border border-white text-white hover:bg-white hover:text-gray-900 rounded-[12px] transition-all ease-in-out duration-500">
+                        className="flex items-center gap-[10px] py-[9px] px-[37.5px] border border-white text-white rounded-[12px]">
                         <p>Join</p>
                         <Image src={ joinIcon } alt='joinIcon' width={ 16 } height={ 16 }/>
                     </button>

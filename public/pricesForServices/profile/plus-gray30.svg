@@ -1,0 +1,7 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="30" height="30" rx="8" fill="#FAFAFC"/>
+    <path d="M9.17188 15.4492H19.9305H9.17188Z" fill="#202020"/>
+    <path d="M9.17188 15.4492H19.9305" stroke="#202020" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M14.5508 10.0703V20.8289V10.0703Z" fill="#202020"/>
+    <path d="M14.5508 10.0703V20.8289" stroke="#202020" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

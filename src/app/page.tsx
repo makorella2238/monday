@@ -1,16 +1,16 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer/Footer";
 import Services from "@/components/ui/PricesForServices/Services";
 import Profile from "@/components/ui/PricesForServices/Profile";
 import React from "react";
+import PricesForServices from "@/components/ui/PricesForServices/PricesForServices";
 
 export default function Home() {
     return (
-        <div className='mx-[40px]'>
-            <Header/>
+        <div>
             <Profile/>
-            <Services/>
-            <Footer/>
+            <div className='mx-[40px]'>
+                <Services/>
+                <PricesForServices/>
+            </div>
         </div>
     );
 }

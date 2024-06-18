@@ -20,11 +20,11 @@ const Services: React.FC = () => {
     const [activeService, setActiveService] = useState(5);
 
     return (
-        <div className="w-full justify-between px-3 py-6 mb-[20px] flex gap-[15px] bg-gray-200">
+        <div className="w-full justify-between px-3 py-6 mb-[20px] flex gap-[15px]">
             {services.map(service => (
                 <div
                     key={service.id}
-                    className={`py-[24px] pl-[26px] pr-[110px] rounded-lg cursor-pointer flex items-center transition-all duration-300 bg-white ${
+                    className={`py-[24px] pl-[26px] pr-[110px] rounded-[16px] cursor-pointer flex items-center transition-all duration-300 bg-white ${
                         activeService === service.id ? 'shadow-lg' : ''
                     }`}
                     onClick={() => setActiveService(service.id)}

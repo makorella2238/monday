@@ -11,8 +11,8 @@ import downArrIcon from '@/../public/header/down-ar.svg'
 
 const Header = () => {
     return (
-        <header className="bg-white shadow-sm mt-[33px]">
-            <div className="mx-auto px-[40px] pb-[20px] flex items-center justify-between">
+        <header className="bg-white shadow-sm pt-[33px]">
+            <div className="mx-auto px-[33px] pb-[20px] flex items-center justify-between">
                 <div className="flex items-center justify-between">
                     <span className="font-bold text-[16px] mr-6 leading-[21px]">MONDAY</span>
                     <div className="flex items-center gap-[8px]">
