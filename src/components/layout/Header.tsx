@@ -8,6 +8,7 @@ import messageIcon from '@/../public/header/message.svg'
 import notificationIcon from '@/../public/header/notification.svg'
 import emptyWalletIcon from '@/../public/header/empty-wallet.svg'
 import downArrIcon from '@/../public/header/down-ar.svg'
+import SearchInput from "@/components/ui/PricesForServices/SearchInput";
 
 const Header = () => {
     return (
@@ -28,15 +29,7 @@ const Header = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="relative">
-                            <input
-                                type="text"
-                                placeholder="Search for services..."
-                                className="w-[316px] bg-[#FAFAFC] rounded-[12px] px-[16px] py-[13px] text-sm focus:outline-none pr-[40px]"
-                            />
-                            <Image src={ searchIcon } alt='searchIcon' width={ 18 } height={ 18 }
-                                   className="absolute top-1/2 transform -translate-y-1/2 right-4"/>
-                        </div>
+                        <SearchInput/>
                     </div>
                 </div>
                 <div className="flex items-center">
