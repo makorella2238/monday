@@ -75,7 +75,7 @@ const Profile: React.FC = () => {
                                 </div>
                                 <Image src={ eye } alt="verification" width={ 30 } height={ 30 }/>
                             </div>
-                            <div className="hidden xl:block space-y-[8px] text-[#202020] font-bold">
+                            <div className="hidden xl:block space-y-[8px] text-[#202020] font-bold text-base">
                                 <div className="flex items-center mb-[8px]">
                                     <Image className="m-[8px] mr-[12px]" src={ profile_verification_gray }
                                            alt="verification" width={ 32 } height={ 32 }/>
@@ -105,8 +105,8 @@ const Profile: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="xl:hidden min-w-10 space-y-[8px] text-[#202020] font-bold text-[12px] sm:text-base">
-                                <div className="flex justify-between gap-[41px]">
+                            <div className="xl:hidden space-y-[8px] text-[#202020] font-bold text-[12px] lg:text-base">
+                                <div className="flex justify-between">
                                     <div className="flex items-center mb-[8px]">
                                         <Image className="mr-1.5" src={ profile_verification_gray } alt="verification"
                                                width={ 28 } height={ 28 }/>
@@ -129,7 +129,7 @@ const Profile: React.FC = () => {
                                         <p>Phone confirmed</p>
                                     </div>
                                 </div>
-                                <div className="flex items-center font-bold text-[12px] sm:text-base">
+                                <div className="flex items-center font-bold">
                                     <Image className="mr-1.5" src={ member } alt="member" width={ 28 } height={ 28 }/>
                                     <div className="flex flex-row items-center gap-1 sm:gap-2 leading-[20px]">
                                         <p className="text-[#9CA5B3]">Member since</p>
