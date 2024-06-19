@@ -16,7 +16,13 @@ function SearchInput() {
             <input
                 type="text"
                 placeholder="Search for services..."
-                className="w-[316px] bg-[#FAFAFC] rounded-[12px] px-[16px] py-[13px] text-sm focus:outline-none pr-[40px]"
+                className="hidden sm:block w-[316px] bg-[#FAFAFC] rounded-[12px] px-[16px] py-[13px] text-sm focus:outline-none pr-[40px]"
+                onFocus={() => setShowDropdown(true)}
+            />
+            <input
+                type="text"
+                placeholder="Search..."
+                className="sm:hidden max-w-[143px] bg-[#FAFAFC] text-[12px] rounded-[12px] px-[15px] py-[12px] focus:outline-none"
                 onFocus={() => setShowDropdown(true)}
             />
             <Image src={ searchIcon } alt='searchIcon' width={ 18 } height={ 18 }
