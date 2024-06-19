@@ -24,7 +24,7 @@ const Footer = () => {
                             onClick={() => setIsAboutOpen(!isAboutOpen)}
                         >
                             About Monday
-                            <Image src={ arr } alt='arr' width={ 24 }
+                            <Image className='sm:hidden' src={ arr } alt='arr' width={ 24 }
                                    height={ 24 }/>
                         </div>
                         <ul className={`${isAboutOpen ? 'block' : 'hidden'} md:block`}>
@@ -39,7 +39,7 @@ const Footer = () => {
                             onClick={() => setIsHelpOpen(!isHelpOpen)}
                         >
                             Help
-                            <Image src={ arr } alt='arr' width={ 24 }
+                            <Image className='sm:hidden' src={ arr } alt='arr' width={ 24 }
                                    height={ 24 }/>
                         </div>
                         <ul className={`${isHelpOpen ? 'block' : 'hidden'} md:block`}>
@@ -54,7 +54,7 @@ const Footer = () => {
                             onClick={() => setIsUsefulOpen(!isUsefulOpen)}
                         >
                             Useful
-                            <Image src={ arr } alt='arr' width={ 24 }
+                            <Image className='sm:hidden' src={ arr } alt='arr' width={ 24 }
                                    height={ 24 }/>
                         </div>
                         <ul className={`${isUsefulOpen ? 'block' : 'hidden'} md:block`}>
@@ -75,7 +75,7 @@ const Footer = () => {
                             onClick={() => setIsCommunityOpen(!isCommunityOpen)}
                         >
                             Community
-                            <Image src={ arr } alt='arr' width={ 24 }
+                            <Image className='sm:hidden' src={ arr } alt='arr' width={ 24 }
                                    height={ 24 }/>
                         </div>
                         <ul className={`${isCommunityOpen ? 'block' : 'hidden'} md:block`}>

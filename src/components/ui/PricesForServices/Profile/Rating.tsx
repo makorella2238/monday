@@ -5,7 +5,7 @@ import React from "react";
 
 function Rating() {
     return (
-        <div className='w-full'>
+        <div>
             <div className="hidden sm:block text-center">
                 <div className="relative flex justify-center mb-[20px]">
                     <Image src={ bigStar } alt="bigStar" width={ 35 } height={ 35 }/>

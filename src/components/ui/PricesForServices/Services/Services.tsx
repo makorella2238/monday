@@ -21,50 +21,98 @@ const Services: React.FC = () => {
     const [activeService, setActiveService] = useState(5);
 
     return (
-        <div className="w-full flex  flex-col sm:flex-row sm:justify-between px-3 sm:py-6 mb-2.5 sm:mb-[20px] gap-[5px] sm:gap-[15px]">
-            { services.map(service => (
-                <div
-                    key={ service.id }
-                    className={ `py-[24px] pl-[26px] pr-[110px] rounded-[16px] cursor-pointer flex items-center transition-all duration-300 bg-white ${
-                        activeService === service.id ? 'bg-transparent sm:bg-white border border-[#AEB5BF] sm:border-none sm:shadow-lg' : ''
-                    }` }
-                    onClick={ () => setActiveService(service.id) }
-                >
-                    { activeService !== service.id && <div className={ `hidden sm:block p-3 mr-2` }>
-                        <Image
-                            src={ service.src }
-                            alt={ service.title }
-                            width={ 19 }
-                            height={ 19 }
-                        />
-                    </div> }
-                    { activeService === service.id && <div className={ `hidden sm:block p-3 mr-2 ${ s.border }` }>
-                        <Image
-                            src={ service.src }
-                            alt={ service.title }
-                            width={ 19 }
-                            height={ 19 }
-                        />
-                    </div> }
-                    <div className={ `sm:hidden p-3 mr-2 ${ s.border }` }>
-                        <Image
-                            src={ service.src }
-                            alt={ service.title }
-                            width={ 19 }
-                            height={ 19 }
-                        />
+        <>
+            <div
+                className="2xl:hidden w-full flex flex-col md:flex-wrap md:flex-row sm:justify-between sm:mt-6 mb-2.5 sm:mb-[20px] gap-[5px] sm:gap-[15px]">
+                { services.map(service => (
+                    <div
+                        key={ service.id }
+                        className={ `md:w-[calc(50%-10px)] w-auto py-[24px] pl-[20px] pr-[20px] rounded-[16px] cursor-pointer flex items-center transition-all duration-300 bg-white ${
+                            activeService === service.id ? 'bg-transparent sm:bg-white border border-[#AEB5BF] sm:border-none sm:shadow-lg' : ''
+                        }` }
+                        onClick={ () => setActiveService(service.id) }
+                    >
+                        { activeService !== service.id && <div className={ `hidden sm:block p-3 mr-2` }>
+                            <Image
+                                src={ service.src }
+                                alt={ service.title }
+                                width={ 19 }
+                                height={ 19 }
+                            />
+                        </div> }
+                        { activeService === service.id && <div className={ `hidden sm:block p-3 mr-2 ${ s.border }` }>
+                            <Image
+                                src={ service.src }
+                                alt={ service.title }
+                                width={ 19 }
+                                height={ 19 }
+                            />
+                        </div> }
+                        <div className={ `sm:hidden p-3 mr-2 ${ s.border }` }>
+                            <Image
+                                src={ service.src }
+                                alt={ service.title }
+                                width={ 19 }
+                                height={ 19 }
+                            />
+                        </div>
+                        <div className='ml-[8px]'>
+                            <h3 className={ `font-bold text-[16px] transition-all duration-300 ${
+                                activeService === service.id ? 'text-[#202020] ' : 'text-[#9CA5B3]'
+                            }` }>
+                                { service.title }
+                            </h3>
+                            <p className="m-0 text-sm text-[#9CA5B3] text-[12px] leading-4">{ service.description }</p>
+                        </div>
                     </div>
-                    <div className='ml-[8px]'>
-                        <h3 className={ `font-bold text-[16px] transition-all duration-300 ${
-                            activeService === service.id ? 'text-[#202020] ' : 'text-[#9CA5B3]'
-                        }` }>
-                            { service.title }
-                        </h3>
-                        <p className="m-0 text-sm text-[#9CA5B3] text-[12px] leading-4">{ service.description }</p>
+                )) }
+            </div>
+            <div
+                className="hidden 2xl:flex w-full flex-col sm:flex-row sm:justify-between px-3 sm:py-6 mb-2.5 sm:mb-[20px] gap-[5px] sm:gap-[15px]">
+                { services.map(service => (
+                    <div
+                        key={ service.id }
+                        className={ `py-[24px] pl-[26px] pr-[110px] rounded-[16px] cursor-pointer flex items-center transition-all duration-300 bg-white ${
+                            activeService === service.id ? 'bg-transparent sm:bg-white border border-[#AEB5BF] sm:border-none sm:shadow-lg' : ''
+                        }` }
+                        onClick={ () => setActiveService(service.id) }
+                    >
+                        { activeService !== service.id && <div className={ `hidden sm:block p-3 mr-2` }>
+                            <Image
+                                src={ service.src }
+                                alt={ service.title }
+                                width={ 19 }
+                                height={ 19 }
+                            />
+                        </div> }
+                        { activeService === service.id && <div className={ `hidden sm:block p-3 mr-2 ${ s.border }` }>
+                            <Image
+                                src={ service.src }
+                                alt={ service.title }
+                                width={ 19 }
+                                height={ 19 }
+                            />
+                        </div> }
+                        <div className={ `sm:hidden p-3 mr-2 ${ s.border }` }>
+                            <Image
+                                src={ service.src }
+                                alt={ service.title }
+                                width={ 19 }
+                                height={ 19 }
+                            />
+                        </div>
+                        <div className='ml-[8px]'>
+                            <h3 className={ `font-bold text-[16px] transition-all duration-300 leading-1${
+                                activeService === service.id ? 'text-[#202020] ' : 'text-[#9CA5B3]'
+                            }` }>
+                                { service.title }
+                            </h3>
+                            <p className="m-0 text-sm text-[#9CA5B3] text-[12px] leading-4">{ service.description }</p>
+                        </div>
                     </div>
-                </div>
-            )) }
-        </div>
+                )) }
+            </div>
+        </>
     );
 };
 
